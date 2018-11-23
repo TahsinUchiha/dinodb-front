@@ -26,6 +26,7 @@ li a {
     padding: 10px;
     text-decoration: none;
 }
+
 h1 a {
     font-weight: bold;
     display: block;
@@ -34,6 +35,17 @@ h1 a {
     padding: 10px;
     text-decoration: none;
 }
+
+h2 a {
+    font-size: 80px;
+    font-weight: bold;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
 body  {
     background-image: url("./../Images/header.jpg");
     background-color: #cccccc;

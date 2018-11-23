@@ -8,7 +8,7 @@ function HomeMain() {
     <Router>
       <div>
         <ul  className="homebar">
-        <h1 className="title"><a>Dino-DataBase</a></h1>
+        <h2 className="title"><a>Dino-DataBase</a></h2>
           <li>
             <Link to="/">Home</Link>
           </li>
