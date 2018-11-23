@@ -17,21 +17,28 @@ li {
     float: left;
 }
 
+
 li a {
+    font-weight: bold;
     display: block;
-    color: rgb(0, 0, 0);
+    color: rgb(253, 253, 253);
     text-align: center;
     padding: 10px;
     text-decoration: none;
 }
 h1 a {
+    font-weight: bold;
     display: block;
     color: rgb(151, 16, 122);
     text-align: center;
     padding: 10px;
     text-decoration: none;
 }
-
+body  {
+    background-image: url("./../Images/header.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+}
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #f2a6f5;

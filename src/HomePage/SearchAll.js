@@ -11,7 +11,7 @@ class SearchAll extends React.Component {
       <form>
         <input className="search" type="text"
 
-          placeholder="    Search Dinosaur" />
+          placeholder="Search Dinosaur" />
 
         <input className="button" type="button" value="Search"/>
 
