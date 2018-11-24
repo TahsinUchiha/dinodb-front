@@ -1,7 +1,10 @@
 import React from "react";
 import SearchAll from './SearchAll.js';
 import './Home.css'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, 
+  Route, 
+  Link
+} from "react-router-dom";
 
 function HomeMain() {
   return (
