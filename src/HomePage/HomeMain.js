@@ -1,5 +1,5 @@
 import React from "react";
-import SearchAll from './SearchAll.js';
+import SearchAll from '../Read/SearchAll.js';
 import './Home.css'
 import { BrowserRouter as Router, 
   Route, 
@@ -22,6 +22,8 @@ function HomeMain() {
             <Link to="/topics">Topics</Link>
           </li>
           <li className="searchbar" style={{float:"right"}}><SearchAll /></li>
+          
+          
         </ul>
 
         <hr />
@@ -61,17 +63,17 @@ function Topics({ match }) {
   return (
     <div>
       <h2>Topics</h2>
-      <ul>
+      {/* <ul>
         <li>
           <Link to={`${match.url}/rendering`}>Rendering with React</Link>
         </li>
         <li>
           <Link to={`${match.url}/components`}>Components</Link>
         </li>
-        <li>
+        <li><a>
           <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-        </li>
-      </ul>
+        </li></a>
+      </ul> */}
 
       <Route path={`${match.path}/:topicId`} component={Topic} />
       <Route
