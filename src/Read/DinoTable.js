@@ -60,7 +60,7 @@ class Tables extends Component {
       <TableHeaderColumn dataField='dinosaurid' isKey>ID</TableHeaderColumn>
       <TableHeaderColumn dataField='dinosaurName'>Name</TableHeaderColumn>
       <TableHeaderColumn dataField='diet'>Diet</TableHeaderColumn>
-      <TableHeaderColumn dataField='description'>description</TableHeaderColumn>
+      <TableHeaderColumn dataField='description'>Description</TableHeaderColumn>
       <TableHeaderColumn dataField='type'>Type   </TableHeaderColumn>
       <TableHeaderColumn dataField='button' dataFormat={this.createDeleteButton}>Delete</TableHeaderColumn>
       
