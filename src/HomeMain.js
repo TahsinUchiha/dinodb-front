@@ -57,7 +57,7 @@ function HomeMain() {
   <NavItem>
   <DropdownButton
             bsStyle="secondary"
-            title="All other functions">
+            title="UserHub">
             <MenuItem eventKey="1">
               <Link to="/CreateUsers" exact>
                 Create a User
@@ -68,6 +68,22 @@ function HomeMain() {
                 Delete a User by ID
               </Link>
             </MenuItem>
+            <MenuItem eventKey="5">
+              <Link to="/UserForm" exact>
+                View Specific Users by ID
+              </Link>
+            </MenuItem>
+            <MenuItem eventKey="8">
+              <Link to="/UpdateUsers" exact>
+                Update Users by ID
+              </Link>
+            </MenuItem>
+          </DropdownButton>
+  </NavItem>
+  <NavItem>
+  <DropdownButton
+            bsStyle="secondary"
+            title="DinoHub">
             <MenuItem eventKey="3">
               <Link to="/CreateDinos" exact>
                 Add a dinosaur
@@ -81,26 +97,6 @@ function HomeMain() {
             <MenuItem eventKey="5">
               <Link to="/DinoForm" exact>
                 View Specific Dinosaurs by ID
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="5">
-              <Link to="/UserForm" exact>
-                View Specific Users by ID
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="6">
-              <Link to="/Tables" exact>
-                A Table of All Dinosaurs
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="7">
-              <Link to="/UserTables" exact>
-                A Table of All Users
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="8">
-              <Link to="/UpdateUsers" exact>
-                Update Users by ID
               </Link>
             </MenuItem>
             <MenuItem eventKey="9">
