@@ -78,5 +78,11 @@ p {
  }
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #10e6b7;
+    background-color: #acff7c9a;
 } 
+
+.delButton {
+
+    color: #acff7c9a;
+
+}

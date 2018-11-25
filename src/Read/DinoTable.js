@@ -30,7 +30,7 @@ class Tables extends Component {
     });
   }
   createDeleteButton =(cell,row) => {
-    return <button id={row.dinosaurid} className="btn btn-outline-danger" onClick={() => this.deleteDino(row.dinosaurid)}>Delete dino</button>;
+    return <button type = "button" className="btn btn-outline-danger"  id={row.dinosaurid} onClick={() => this.deleteDino(row.dinosaurid)}>Delete dino</button>;
   }
 
   componentWillMount() {
@@ -62,7 +62,7 @@ class Tables extends Component {
       <TableHeaderColumn dataField='diet'>Diet</TableHeaderColumn>
       <TableHeaderColumn dataField='description'>description</TableHeaderColumn>
       <TableHeaderColumn dataField='type'>Type   </TableHeaderColumn>
-      <TableHeaderColumn dataField='button' dataFormat={this.createDeleteButton}>Delete</TableHeaderColumn>
+      <TableHeaderColumn dataField='button'  dataFormat={this.createDeleteButton}>Delete</TableHeaderColumn>
       
       </BootstrapTable>
 

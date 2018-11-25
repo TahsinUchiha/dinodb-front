@@ -122,7 +122,7 @@ updateDinos = e => {
 
           <FormGroup>
             <Col componentClass={ControlLabel} sm={4}>
-              <p align="right"> description : </p>
+              <p align="right"> Description : </p>
             </Col>
             <Col sm={3}>
               <FormControl
