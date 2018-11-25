@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import argent from '.././Images/argent.png'
+
 
 
 
@@ -34,6 +36,8 @@ getDino = e => {
 
     return (
 
+        <div>
+
       <form onSubmit={this.getDino}>
         <input className="search" type="text" name = "dinosaur"
         placeholder="Search Dinosaur" />
@@ -42,14 +46,16 @@ getDino = e => {
         </button>
 
      
-        {this.state.type ? <p> Type : {this.state.type}</p> : <p />}
+        {this.state.type ? <p> Type : {this.state.type}</p>  :<p> Please Enter an ID </p>}
         {this.state.dinosaurName ? <p> Dino : {this.state.dinosaurName}</p> : <p />}
         {this.state.diet ? <p>Diet : {this.state.diet}</p> : <p />}
         {this.state.description ? <p>Description : {this.state.description}</p> : <p />}
   
       </form>
 
-      
+      <img src={argent}/>
+
+      </div>
 
  
     );

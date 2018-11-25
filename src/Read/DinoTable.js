@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import argent from '.././Images/argent.png'
+import allDinos from '.././Images/allDinos.jpg'
 import { BootstrapTable, 
   TableHeaderColumn, 
   
@@ -48,7 +48,7 @@ class Tables extends Component {
   render () {
     return (
       <div className="Table" >
-      <h1> Dinosaur Table </h1>
+      <h1> List of all Dinosaurs </h1>
       <BootstrapTable data={this.state.dinos}
       striped
       hover
@@ -66,7 +66,7 @@ class Tables extends Component {
       </BootstrapTable>
 
 
-      <img src={argent}/>
+      <img src={allDinos}/>
 
 
 

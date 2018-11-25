@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from "axios";
+import info from '.././Images/info.jpg'
+
 
 class UserForm extends React.Component {
     constructor(props) {
@@ -30,6 +32,7 @@ getUser = (e) => {
 
 render () {
 return (
+    <div>
     <form onSubmit = {this.getUser}>
         <input type = "text" name="username"/>
         <button>
@@ -40,8 +43,9 @@ return (
         {this.state.lname ? <p> Last Name of the User : {this.state.lname} </p>: <p></p>}
         {this.state.uname ? <p> UserName : {this.state.uname} </p>: <p></p>}
         
-
+<img src={info}/>
     </form>
+    </div>
 );
 }
 }

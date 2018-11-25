@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import del from '.././Images/del.jpg'
 import {
   FormControl,
   Form,
@@ -70,6 +71,7 @@ class DeleteUsers extends Component {
             </Col>
           </FormGroup>
         </Form>
+        <img src={del}/>
         </div>
       );
     }

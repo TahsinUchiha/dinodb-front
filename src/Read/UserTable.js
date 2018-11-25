@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import people from '.././Images/people.jpg'
 import { BootstrapTable, TableHeaderColumn, BSTable } from 'react-bootstrap-table';
 
 class UserTables extends Component {
@@ -44,7 +45,7 @@ class UserTables extends Component {
   render () {
     return (
       <div className="Table">
-      <h1> User Table </h1>
+      <h1> List of all Users </h1>
       <BootstrapTable 
       data={this.state.users}
        striped
@@ -57,8 +58,12 @@ class UserTables extends Component {
       <TableHeaderColumn dataField='firstName'>FirstName</TableHeaderColumn>
       <TableHeaderColumn dataField='lastName'>LastName</TableHeaderColumn>
       <TableHeaderColumn dataField='button' dataFormat={this.createDeleteButton}>Delete</TableHeaderColumn>
-      
       </BootstrapTable>
+
+      <img src={people}/>
+
+
+
       </div>
     );
   }

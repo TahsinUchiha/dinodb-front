@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import update from '.././Images/update.jpg'
 
 import {
   FormControl,
@@ -122,6 +123,8 @@ class UpdateUsers extends Component {
             </Col>
           </FormGroup>
         </Form>
+
+        <img src={update}/>
       </div>
     );
   }

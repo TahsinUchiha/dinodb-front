@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import add from '.././Images/add.png'
 
 import {
   FormControl,
@@ -106,30 +107,9 @@ class CreateUsers extends Component {
               </Button>
             </Col>
           </FormGroup>
-
-
           </Form>
-
+          <img src={add}/>
         </div>
-
-
-
-
-
-
-        // <form onSubmit={this.addUser}>
-        //   <header>
-        //     <h1>Add a User</h1>
-        //   </header>
-        //   Enter a UserName      : <input type="text" name="username" />
-        //   <br />
-        //   Enter your First name : <input type="text" name="firstname" />
-        //   <br />
-        //   Enter your Last name  : <input type="text" name="lastname" />
-        //   <br />
-
-        //   <button  >Add User</button>
-        // </form>
       );
     }
   }
