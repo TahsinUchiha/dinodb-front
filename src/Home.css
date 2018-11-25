@@ -44,6 +44,9 @@ body  {
     background-image: url("./Images/header.jpg");
     background-color: #cccccc;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
     
     
     
@@ -68,5 +71,5 @@ p {
  }
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #f2a6f5;
+    background-color: #10e6b7;
 } 

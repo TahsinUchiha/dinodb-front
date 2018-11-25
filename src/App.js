@@ -21,7 +21,7 @@ state = {
 
   render() {
     return (
-      <div className="App" style = {{maxWidth: "1000px", margin: "auto"}}>
+      <div className="App" style = {{maxWidth: "1200px", margin: "auto"}}>
       <HomeMain/>
       {/* <CreateUsers/>
       <UserForm/>
