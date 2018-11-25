@@ -57,6 +57,13 @@ body  {
     white-space: nowrap;
 }
 
+table {
+
+    color: #000000;
+    background-color: #acff7c9a;
+
+}
+
 p {
     color:#fffffff5;
     display: block;

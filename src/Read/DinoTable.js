@@ -50,11 +50,11 @@ class Tables extends Component {
       <div className="Table" >
       <h1> List of all Dinosaurs </h1>
       <BootstrapTable data={this.state.dinos}
-      striped
+     class="table"
+     striped
       hover
       condensed
       pagination
-      search
       search>
       <TableHeaderColumn dataField='dinosaurid' isKey>ID</TableHeaderColumn>
       <TableHeaderColumn dataField='dinosaurName'>Name</TableHeaderColumn>

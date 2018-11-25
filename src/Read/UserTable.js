@@ -47,11 +47,14 @@ class UserTables extends Component {
       <div className="Table">
       <h1> List of all Users </h1>
       <BootstrapTable 
+      class = 'table'
+      striped
+      bordered 
+      condensed 
+      hover
+
+      
       data={this.state.users}
-       striped
-       hover
-       condensed
-       pagination
       search>
       <TableHeaderColumn dataField='userID' isKey>ID</TableHeaderColumn>
       <TableHeaderColumn dataField='userName'>UserName</TableHeaderColumn>
