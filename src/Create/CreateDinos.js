@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import rex from '.././Images/rex.png'
 
 import {
   FormControl,
@@ -63,13 +64,13 @@ class CreateDinos extends Component {
         <Form horizontal onSubmit={this.addDinos}>
           <FormGroup>
             <Col componentClass={ControlLabel} sm={4}>
-              <p align="right">   Enter the Type of Dinosaur [LAND,FLYING,SEA] : </p>
+              <p align="right"> Enter the Type of Dinosaur [LAND,FLYING,SEA] : </p>
             </Col>
             <Col sm={5}>
               <FormControl
                 type="text"
                 name="type"
-                placeholder="e.g LAND"
+                placeholder="case sensitive, e.g. LAND"
               />
             </Col>
           </FormGroup>
@@ -120,27 +121,11 @@ class CreateDinos extends Component {
               </Button>
             </Col>
           </FormGroup>
-
-
           </Form>
 
-        </div>
-        // <form onSubmit={this.addDinos}>
-        //   <header>
-        //     <h1>Add a Dinosaur</h1>
-        //   </header>
-          
-        //   Enter the Type of Dinosaur [LAND,FLYING,SEA] : <input type="text" name="type" />
-        //   <br />
-        //   Enter the name of the Dinosaur : <input type="text" name="dinosaurname" />
-        //   <br />
-        //   Enter the diet of the Dinosaur [Carnivorous/Herbivorous/Omnivorous] : <input type="text" name="diet" />
-        //   <br />
-        //   Enter a description for the dinosaur : <input type="text" name="description" />
-        //   <br />
+          <img src= {rex}/>
 
-        //   <button  >Add Dino</button>
-        // </form>
+        </div>
       );
     }
   }

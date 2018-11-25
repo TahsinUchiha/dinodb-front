@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import bronto from '.././Images/bronto.png'
 
 import {
   FormControl,
@@ -72,6 +73,7 @@ class DeleteDinos extends Component {
             </Col>
           </FormGroup>
         </Form>
+        <img src = {bronto}/>
       </div>
       );
     }

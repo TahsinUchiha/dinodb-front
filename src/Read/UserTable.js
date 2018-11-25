@@ -44,13 +44,13 @@ class UserTables extends Component {
   render () {
     return (
       <div className="Table">
-      <BootstrapTable data={this.state.users}
+      <h1> User Table </h1>
+      <BootstrapTable 
+      data={this.state.users}
        striped
        hover
        condensed
        pagination
-       insertRow
-       search
       search>
       <TableHeaderColumn dataField='userID' isKey>ID</TableHeaderColumn>
       <TableHeaderColumn dataField='userName'>UserName</TableHeaderColumn>

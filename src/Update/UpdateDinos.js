@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import mosa from '.././Images/mosa.png'
 
 import {
   FormControl,
@@ -141,6 +142,8 @@ updateDinos = e => {
             </Col>
           </FormGroup>
         </Form>
+
+        <img src = {mosa}/>
       </div>
     );
   }

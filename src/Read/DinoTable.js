@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { BootstrapTable, TableHeaderColumn, BSTable } from 'react-bootstrap-table';
+import argent from '.././Images/argent.png'
+import { BootstrapTable, 
+  TableHeaderColumn, 
+  
+  BSTable } from 'react-bootstrap-table';
 
 class Tables extends Component {
   constructor(props){
@@ -44,12 +48,12 @@ class Tables extends Component {
   render () {
     return (
       <div className="Table" >
+      <h1> Dinosaur Table </h1>
       <BootstrapTable data={this.state.dinos}
       striped
       hover
       condensed
       pagination
-      insertRow
       search
       search>
       <TableHeaderColumn dataField='dinosaurid' isKey>ID</TableHeaderColumn>
@@ -60,6 +64,12 @@ class Tables extends Component {
       <TableHeaderColumn dataField='button' dataFormat={this.createDeleteButton}>Delete</TableHeaderColumn>
       
       </BootstrapTable>
+
+
+      <img src={argent}/>
+
+
+
       </div>
     );
   }

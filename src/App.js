@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import UserForm from './Read/UserForm.js'
-// import Home from './HomePage/Home.js';
-import HomeMain from './HomePage/HomeMain.js';
+import HomeMain from './HomeMain.js';
 import axios from 'axios';
 import CreateUsers from './Create/CreateUsers.js';
 import DeleteUsers from './Delete/DeleteUsers.js'
@@ -25,7 +23,7 @@ state = {
     return (
       <div className="App" style = {{maxWidth: "1000px", margin: "auto"}}>
       <HomeMain/>
-      <CreateUsers/>
+      {/* <CreateUsers/>
       <UserForm/>
       <UserTables/>
       <UpdateUsers/>
@@ -34,30 +32,7 @@ state = {
       <DinoForm/>
       <Tables/>
       <UpdateDinos/>
-      <DeleteDinos/>
-  
-      
-    
-   
-    
-   
-   
-   
-
-
-
-<br />
-<br />
-      <footer>
-        <p>
-          Made by: Tahsin 
-        </p>
-        <p>
-          Contact me : {" "}
-        <a href="mailto:alton255@yahoo.co.uk">Here </a>
-        </p>
-
-      </footer>
+      <DeleteDinos/> */}
 
       </div>
     );

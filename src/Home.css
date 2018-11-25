@@ -1,0 +1,72 @@
+li a {
+    font-weight: bold;
+    display: block;
+    color: rgb(15, 3, 17);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+h1 a {
+    font-weight: bold;
+    display: block;
+    color: rgb(151, 16, 122);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: bold;
+    display: block;
+    color: #000000;;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-text-stroke: 1px rgb(173, 203, 247);
+}
+
+
+
+/* h2 a {
+    font-size: 80px;
+    font-weight: bold;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+} */
+
+body  {
+    background-image: url("./Images/header.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+
+.container {
+    width: 100%;
+    white-space: nowrap;
+}
+
+p {
+    color:#fffffff5;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+ }
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #f2a6f5;
+} 
