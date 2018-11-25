@@ -87,7 +87,7 @@ updateDinos = e => {
                 input
                 type="text"
                 name="type"
-                placeholder="LAND,SEA,FLYING..."
+                placeholder="case Sensitive [LAND,SEA,FLYING...]"
               />
             </Col>
           </FormGroup>
