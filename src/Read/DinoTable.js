@@ -3,6 +3,7 @@ import axios from 'axios';
 import allDinos from '.././Images/allDinos.jpg'
 import { BootstrapTable, 
   TableHeaderColumn, 
+  Button,
   
   BSTable } from 'react-bootstrap-table';
 import UpdateDinos from '../Update/UpdateDinos';

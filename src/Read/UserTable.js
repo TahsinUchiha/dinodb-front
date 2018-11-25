@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import people from '.././Images/people.jpg'
-import { BootstrapTable, TableHeaderColumn, BSTable } from 'react-bootstrap-table';
+import { BootstrapTable, TableHeaderColumn, BSTable, button } from 'react-bootstrap-table';
 import UpdateUsers from '../Update/UpdateUsers';
 
 class UserTables extends Component {

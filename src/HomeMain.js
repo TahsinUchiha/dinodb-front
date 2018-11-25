@@ -86,7 +86,7 @@ function HomeMain() {
             title="DinoHub">
             <MenuItem eventKey="3">
               <Link to="/CreateDinos" exact>
-                Add a dinosaur
+                Add a Dinosaur
               </Link>
             </MenuItem>
             <MenuItem eventKey="4">
@@ -114,63 +114,6 @@ function HomeMain() {
     </Nav>
   </Navbar.Collapse>
 </Navbar>
-        {/* <Button>
-          <DropdownButton
-            bsStyle="secondary"
-            title="Select From Here"
-          >
-            <MenuItem eventKey="1">
-              <Link to="/CreateUsers" exact>
-                Create a User
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="2" href="/Registration">
-              <Link to="/DeleteUsers" exact>
-                Delete a User by ID
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="3">
-              <Link to="/CreateDinos" exact>
-                Add a dinosaur
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="4">
-              <Link to="/DeleteDinos" exact>
-                Delete a Dinosaur by ID
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="5">
-              <Link to="/DinoForm" exact>
-                View Specific Dinosaurs by ID
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="5">
-              <Link to="/UserForm" exact>
-                View Specific Users by ID
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="6">
-              <Link to="/Tables" exact>
-                A Table of All Dinosaurs
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="7">
-              <Link to="/UserTables" exact>
-                A Table of All Users
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="8">
-              <Link to="/UpdateUsers" exact>
-                Update Users by ID
-              </Link>
-            </MenuItem>
-            <MenuItem eventKey="9">
-              <Link to="/UpdateDinos" exact>
-                Update Dinosaurs by ID
-              </Link>
-            </MenuItem>
-          </DropdownButton>
-        </Button> */}
         <Route path="/CreateUsers" component={CreateUsers} />
         <Route path="/CreateDinos" component={CreateDinos} />
         <Route path="/DeleteUsers" component={DeleteUsers} />
