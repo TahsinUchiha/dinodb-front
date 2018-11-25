@@ -5,6 +5,7 @@ import { BootstrapTable,
   TableHeaderColumn, 
   
   BSTable } from 'react-bootstrap-table';
+import UpdateDinos from '../Update/UpdateDinos';
 
 class Tables extends Component {
   constructor(props){
@@ -66,7 +67,9 @@ class Tables extends Component {
       </BootstrapTable>
 
 
-      <img src={allDinos}/>
+      {/* <img src={allDinos}/> */}
+
+      <UpdateDinos/>
 
 
 

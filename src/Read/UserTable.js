@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import people from '.././Images/people.jpg'
 import { BootstrapTable, TableHeaderColumn, BSTable } from 'react-bootstrap-table';
+import UpdateUsers from '../Update/UpdateUsers';
 
 class UserTables extends Component {
   constructor(props){
@@ -63,10 +64,8 @@ class UserTables extends Component {
       <TableHeaderColumn dataField='button' dataFormat={this.createDeleteButton}>Delete</TableHeaderColumn>
       </BootstrapTable>
 
-      <img src={people}/>
-
-
-
+      {/* <img src={people}/> */}
+      <UpdateUsers/>
       </div>
     );
   }
