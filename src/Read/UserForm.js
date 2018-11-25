@@ -34,7 +34,7 @@ render () {
 return (
     <div>
     <form onSubmit = {this.getUser}>
-        <input type = "text" name="username"/>
+        <input type = "text" name="username"  placeholder="Search Users"/>
         <button>
             Search User
         </button>

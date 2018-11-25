@@ -68,7 +68,7 @@ class UpdateUsers extends Component {
                 input
                 type="number"
                 name="userID"
-                placeholder="USER ID..."
+                placeholder="User ID..."
               />
             </Col>
           </FormGroup>
