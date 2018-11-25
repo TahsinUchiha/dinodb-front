@@ -12,14 +12,15 @@ import {
 
 
 class UpdateDinos extends Component {
-  updateDinos = e => {
+ 
+updateDinos = e => {
     e.preventDefault();
 
-    const dinosaurid = e.targent.elements.dinosaurid.value;
+    const dinosaurid = e.target.elements.dinosaurid.value;
     const type = e.target.elements.type.value;
-    const dinosaurName = e.targent.elements.dinosaurName.value;
-    const diet = e.targent.elements.diet.value;
-    const description = e.targent.elements.description.value;
+    const dinosaurName = e.target.elements.dinosaurName.value;
+    const diet = e.target.elements.diet.value;
+    const description = e.target.elements.description.value;
 
     if (
       dinosaurid &&
@@ -42,7 +43,7 @@ class UpdateDinos extends Component {
         .then(res => {
           console.log(res);
           alert(
-            "Dinosaur has been updated to " + dinosaurName + "  " + diet
+            "Dinosaur has been updated to " + dinosaurName + "  " + type
           );
         });
     } else {

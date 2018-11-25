@@ -24,17 +24,26 @@ state = {
   render() {
     return (
       <div className="App" style = {{maxWidth: "1000px", margin: "auto"}}>
-      <CreateUsers/>
-      <CreateDinos/>
       <HomeMain/>
+      <CreateUsers/>
       <UserForm/>
+      <UserTables/>
+      <UpdateUsers/>
       <DeleteUsers/>
-     <DeleteDinos/>
-     <DinoForm/>
-     <Tables/>
-     <UserTables/>
-     <UpdateUsers/>
-     <UpdateDinos/>
+      <CreateDinos/>
+      <DinoForm/>
+      <Tables/>
+      <UpdateDinos/>
+      <DeleteDinos/>
+  
+      
+    
+   
+    
+   
+   
+   
+
 
 
 <br />

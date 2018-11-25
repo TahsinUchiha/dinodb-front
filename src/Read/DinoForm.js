@@ -36,9 +36,8 @@ getDino = e => {
     return (
 
       <form onSubmit={this.getDino}>
-        <input style = {{ marginTop: "30px auto", display: "block"}} className="search" type="text" name = "dinosaur"
+        <input className="search" type="text" name = "dinosaur"
         placeholder="Search Dinosaur" />
-        <input className="button" value="Search"/>
         <button name= "button">
           Get Dino
         </button>
