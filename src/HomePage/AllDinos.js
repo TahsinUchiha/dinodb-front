@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from "axios";
 
-class AllDinos extends React.Component {
+class AllDinos extends Component {
     constructor(props) {
         super(props);
         this.state = { user: "" };
@@ -15,7 +15,7 @@ class AllDinos extends React.Component {
     const allDino = a.target.elements.dinosaur.value;
 
 if (allDino) {
-    axios.get(`http://localhost:8080/dinodb/api/dinosaur/${allDino}`)
+    axios.get(`http://35.230.143.224:8080/dinodb/api/dinosaur/${allDino}`)
     .then(res => {
       console.log(res)
     const type = res.data.type;

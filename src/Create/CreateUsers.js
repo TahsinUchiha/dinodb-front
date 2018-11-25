@@ -11,7 +11,7 @@ import {
 } from "react-bootstrap";
 
 
-class CreateUsers extends React.Component {
+class CreateUsers extends Component {
     addUser = e => {
       e.preventDefault();
   
@@ -27,7 +27,7 @@ class CreateUsers extends React.Component {
         lastName 
       ) {
         axios
-          .post(` http://localhost:8080/dinodb/api/dinosaur/addUser`, {
+          .post(` http://35.230.143.224:8080/dinodb/api/dinosaur/addUser`, {
             userName,
             firstName,
             lastName

@@ -9,7 +9,7 @@ import {
   Button
 } from "react-bootstrap";
 
-class DeleteUsers extends React.Component {
+class DeleteUsers extends Component {
     constructor(props) {
       super(props);
       this.state = { user: "" };
@@ -22,7 +22,7 @@ class DeleteUsers extends React.Component {
   
       if (userID) {
         axios
-          .delete(`http://localhost:8080/dinodb/api/dinosaur/deleteUsers/${userID}`)
+          .delete(`http://35.230.143.224:8080/dinodb/api/dinosaur/deleteUsers/${userID}`)
           .then(res => {
             console.log(res);
             alert("User Successfully Removed!");

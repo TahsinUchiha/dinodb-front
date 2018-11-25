@@ -16,7 +16,7 @@ getDino = e => {
     const dinoID = e.target.elements.dinosaur.value;
   
     if (dinoID) {
-      axios.get(`http://localhost:8080/dinodb/api/dinosaur/getDinosaur/${dinoID}`)
+      axios.get(`http://35.230.143.224:8080/dinodb/api/dinosaur/getDinosaur/${dinoID}`)
       .then(res => {
         // console.log(res);
         const type = res.data.type;

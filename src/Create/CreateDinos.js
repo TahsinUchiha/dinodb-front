@@ -10,7 +10,7 @@ import {
   Button
 } from "react-bootstrap";
 
-class CreateDinos extends React.Component {
+class CreateDinos extends Component {
     addDinos = e => {
       e.preventDefault();
   
@@ -28,7 +28,7 @@ class CreateDinos extends React.Component {
         description 
       ) {
         axios
-          .post(` http://localhost:8080/dinodb/api/dinosaur/addDinosaur`, {
+          .post(` http://35.230.143.224:8080/dinodb/api/dinosaur/addDinosaur`, {
             type,
             dinosaurName,
             diet,

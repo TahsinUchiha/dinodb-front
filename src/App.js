@@ -10,31 +10,15 @@ import DeleteUsers from './Delete/DeleteUsers.js'
 import CreateDinos from './Create/CreateDinos.js';
 import DeleteDinos from './Delete/DeleteDinos.js';
 import DinoForm from './Read/DinoForm.js';
+import Tables from './Read/DinoTable.js';
+import UserTables from './Read/UserTable.js';
+import UpdateUsers from './Update/UpdateUsers.js';
+import UpdateDinos from './Update/UpdateDinos.js';
 
 
 class App extends Component {
 state = {
   name: null
-}
-
-
-getUser = (e) => {
-  e.preventDefault();
-  const userID = e.target.elements.username.value;
-
-  if (userID) {
-
-  axios.get(`http://localhost:8080/dinodb/api/dinosaur/getUsers/${userID}`)
-  .then((res) => {
-    const fname = res.data.firstName;
-    const lname = res.data.lastName;
-    const uname = res.data.userName;
-    // console.log(name)
-    this.setState({fname});
-    this.setState({lname});
-    this.setState({uname});
-  })
-} else return;
 }
 
   render() {
@@ -47,7 +31,11 @@ getUser = (e) => {
       <DeleteUsers/>
      <DeleteDinos/>
      <DinoForm/>
-      
+     <Tables/>
+     <UserTables/>
+     <UpdateUsers/>
+     <UpdateDinos/>
+
 
 <br />
 <br />

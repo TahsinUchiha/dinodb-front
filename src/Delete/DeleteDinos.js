@@ -10,7 +10,7 @@ import {
   Button
 } from "react-bootstrap";
 
-class DeleteDinos extends React.Component {
+class DeleteDinos extends Component {
     constructor(props) {
       super(props);
       this.state = { dinos: "" };
@@ -23,7 +23,7 @@ class DeleteDinos extends React.Component {
   
       if (dinoID) {
         axios
-          .delete(`http://localhost:8080/dinodb/api/dinosaur/deleteDinosaur/${dinoID}`)
+          .delete(`http://35.230.143.224:8080/dinodb/api/dinosaur/deleteDinosaur/${dinoID}`)
           .then(res => {
             console.log(res);
             alert("Dinosaur Successfully Removed!")

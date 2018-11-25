@@ -1,5 +1,4 @@
 import React from "react";
-import SearchAll from '../Read/SearchAll.js';
 import './Home.css'
 import { BrowserRouter as Router, 
   Route, 
@@ -21,7 +20,7 @@ function HomeMain() {
           <li>
             <Link to="/topics">Topics</Link>
           </li>
-          <li className="searchbar" style={{float:"right"}}><SearchAll /></li>
+         
           
           
         </ul>
