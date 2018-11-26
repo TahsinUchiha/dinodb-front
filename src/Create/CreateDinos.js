@@ -43,18 +43,9 @@ class CreateDinos extends Component {
         alert("Some fields need filling");
       }
     };
-    // verification () {
-    //     return (
-    //     <div>
-    //     <p>
-    //     User has been Added!
-    //     </p>
-    //     </div>
-    //     );
-    // }
        
 
-  
+
     render() {
       return (
         <div>
