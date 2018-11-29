@@ -29,17 +29,6 @@ h1 {
 }
 
 
-
-/* h2 a {
-    font-size: 80px;
-    font-weight: bold;
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-} */
-
 body  {
     background-image: url("./Images/header.jpg");
     background-color: #cccccc;
@@ -71,12 +60,12 @@ p {
     font-size: 20px;
     text-align: center;
 
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: white; 
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     
  }
-/* Change the link color to #111 (black) on hover */
+
 li a:hover {
     background-color: #acff7c9a;
 } 

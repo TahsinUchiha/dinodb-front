@@ -40,7 +40,7 @@ class UpdateUsers extends Component {
         .then(res => {
           console.log(res);
           alert(
-            "User has been updated to" +  firstName  + " "+ lastName
+            "User has been updated to" + firstName + " " + lastName
           );
         });
     } else {
@@ -124,7 +124,7 @@ class UpdateUsers extends Component {
           </FormGroup>
         </Form>
 
-        <img src={update}/>
+        <img src={update} />
       </div>
     );
   }

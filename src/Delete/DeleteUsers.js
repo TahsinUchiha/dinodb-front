@@ -33,15 +33,6 @@ class DeleteUsers extends Component {
   
     render() {
       return (
-        // <form onSubmit={this.removeUser}>
-        //     <header>
-        //     <h1>Delete User by ID</h1>
-        //     </header>
-  
-        //   <p>Delete a user of your choice by ID [Hint: check which user is which ID]</p>
-        //   <input type="text" name="userID" />
-        //   <button>Remove User </button>
-        // </form>
         <div>
         <header>
           <h1>Delete User</h1>

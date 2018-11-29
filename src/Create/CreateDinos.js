@@ -12,44 +12,40 @@ import {
 } from "react-bootstrap";
 
 class CreateDinos extends Component {
-    addDinos = e => {
-      e.preventDefault();
-  
-      const type = e.target.elements.type.value;
-      const dinosaurName = e.target.elements.dinosaurname.value;
-      const diet = e.target.elements.diet.value;
-      const description = e.target.elements.description.value;
+  addDinos = e => {
+    e.preventDefault();
 
-  
-  
-      if (
-        type &&
-        dinosaurName &&
-        diet &&
-        description 
-      ) {
-        axios
-          .post(` http://35.230.143.224:8080/dinodb/api/dinosaur/addDinosaur`, {
-            type,
-            dinosaurName,
-            diet,
-            description
-          })
-          .then(res => {
-            console.log(res);
-            alert("Dinosaur Added!")
-          })
-      } else {
-        alert("Some fields need filling");
-      }
-    };
-       
+    const type = e.target.elements.type.value;
+    const dinosaurName = e.target.elements.dinosaurname.value;
+    const diet = e.target.elements.diet.value;
+    const description = e.target.elements.description.value;
+    
+    if (
+      type &&
+      dinosaurName &&
+      diet &&
+      description
+    ) {
+      axios
+        .post(` http://35.230.143.224:8080/dinodb/api/dinosaur/addDinosaur`, {
+          type,
+          dinosaurName,
+          diet,
+          description
+        })
+        .then(res => {
+          console.log(res);
+          alert("Dinosaur Added!")
+        })
+    } else {
+      alert("Some fields need filling");
+    }
+  };
 
-
-    render() {
-      return (
-        <div>
-              <header>
+  render() {
+    return (
+      <div>
+        <header>
           <h1>Add a Dinosaur</h1>
         </header>
         <Form horizontal onSubmit={this.addDinos}>
@@ -105,20 +101,20 @@ class CreateDinos extends Component {
             </Col>
           </FormGroup>
 
-            <FormGroup>
+          <FormGroup>
             <Col smOffset={3} sm={5}>
               <Button bsStyle="info" type="submit">
                 Add Dino
               </Button>
             </Col>
           </FormGroup>
-          </Form>
+        </Form>
 
-          <img src= {rex}/>
+        <img src={rex} />
 
-        </div>
-      );
-    }
+      </div>
+    );
   }
-  
-  export default CreateDinos;
+}
+
+export default CreateDinos;

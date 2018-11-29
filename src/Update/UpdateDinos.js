@@ -13,8 +13,8 @@ import {
 
 
 class UpdateDinos extends Component {
- 
-updateDinos = e => {
+
+  updateDinos = e => {
     e.preventDefault();
 
     const dinosaurid = e.target.elements.dinosaurid.value;
@@ -35,7 +35,7 @@ updateDinos = e => {
           `http://35.230.143.224:8080/dinodb/api/dinosaur/updateDinosaur/${dinosaurid}`,
           {
             dinosaurid,
-            type,  
+            type,
             dinosaurName,
             diet,
             description
@@ -78,7 +78,7 @@ updateDinos = e => {
             </Col>
           </FormGroup>
 
-           <FormGroup>
+          <FormGroup>
             <Col componentClass={ControlLabel} sm={4}>
               <p align="right"> Enter the type of the Dinosaur : </p>
             </Col>
@@ -143,7 +143,7 @@ updateDinos = e => {
           </FormGroup>
         </Form>
 
-        <img src = {mosa}/>
+        <img src={mosa} />
       </div>
     );
   }

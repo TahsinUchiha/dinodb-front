@@ -13,50 +13,37 @@ import {
 
 
 class CreateUsers extends Component {
-    addUser = e => {
-      e.preventDefault();
-  
-      const userName = e.target.elements.username.value;
-      const firstName = e.target.elements.firstname.value;
-      const lastName = e.target.elements.lastname.value;
+  addUser = e => {
+    e.preventDefault();
 
-  
-  
-      if (
-        userName &&
-        firstName &&
-        lastName 
-      ) {
-        axios
-          .post(` http://35.230.143.224:8080/dinodb/api/dinosaur/addUser`, {
-            userName,
-            firstName,
-            lastName
-          })
-          .then(res => {
-            console.log(res);
-            alert("User Added!")
-          })
-      } else {
-        alert("Some fields need filling");
-      }
-    };
-    // verification () {
-    //     return (
-    //     <div>
-    //     <p>
-    //     User has been Added!
-    //     </p>
-    //     </div>
-    //     );
-    // }
-       
+    const userName = e.target.elements.username.value;
+    const firstName = e.target.elements.firstname.value;
+    const lastName = e.target.elements.lastname.value;
 
-  
-    render() {
-      return (
-          <div>
-              <header>
+    if (
+      userName &&
+      firstName &&
+      lastName
+    ) {
+      axios
+        .post(` http://35.230.143.224:8080/dinodb/api/dinosaur/addUser`, {
+          userName,
+          firstName,
+          lastName
+        })
+        .then(res => {
+          console.log(res);
+          alert("User Added!")
+        })
+    } else {
+      alert("Some fields need filling");
+    }
+  };
+
+  render() {
+    return (
+      <div>
+        <header>
           <h1>Add a User</h1>
         </header>
         <Form horizontal onSubmit={this.addUser}>
@@ -86,7 +73,7 @@ class CreateUsers extends Component {
             </Col>
           </FormGroup>
 
-             <FormGroup>
+          <FormGroup>
             <Col componentClass={ControlLabel} sm={4}>
               <p align="right">  Enter your Last name : </p>
             </Col>
@@ -99,7 +86,7 @@ class CreateUsers extends Component {
             </Col>
           </FormGroup>
 
-          
+
           <FormGroup>
             <Col smOffset={3} sm={5}>
               <Button bsStyle="info" type="submit">
@@ -107,12 +94,11 @@ class CreateUsers extends Component {
               </Button>
             </Col>
           </FormGroup>
-          </Form>
-          <img src={add}/>
-        </div>
-      );
-    }
+        </Form>
+        <img src={add} />
+      </div>
+    );
   }
-  
-  export default CreateUsers;
-  
+}
+
+export default CreateUsers;

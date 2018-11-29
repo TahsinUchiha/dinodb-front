@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import people from '.././Images/people.jpg'
-import { BootstrapTable, TableHeaderColumn, BSTable, button } from 'react-bootstrap-table';
+import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 import UpdateUsers from '../Update/UpdateUsers';
 
 class UserTables extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       users: this.props.array
@@ -23,10 +22,10 @@ class UserTables extends Component {
   }
   deleteUser = (event) => {
     axios.delete(`http://35.230.143.224:8080/dinodb/api/dinosaur/deleteUsers/` + event).then((res) => {
-  window.location.reload()
+      window.location.reload()
     });
   }
-  createDeleteButton =(cell,row) => {
+  createDeleteButton = (cell, row) => {
     return <button id={row.userID} className="btn btn-outline-danger" onClick={() => this.deleteUser(row.userID)}>Delete User</button>;
   }
 
@@ -34,38 +33,35 @@ class UserTables extends Component {
     axios.all([
       axios.get(`http://35.230.143.224:8080/dinodb/api/dinosaur/getAllUsers`),
     ])
-    .then(axios.spread(function ( userID, userName ) {
-      let user = userID.data.concat(userName.data);
+      .then(axios.spread(function (userID, userName) {
+        let user = userID.data.concat(userName.data);
         this.setState({ user })
-    }))
+      }))
 
-    .catch(error => console.log(error));
- 
- }
+      .catch(error => console.log(error));
 
-  render () {
+  }
+
+  render() {
     return (
       <div className="Table">
-      <h1> List of all Users </h1>
-      <BootstrapTable 
-      class = 'table'
-      striped
-      bordered 
-      condensed 
-      hover
+        <h1> List of all Users </h1>
+        <BootstrapTable
+          class='table'
+          striped
+          bordered
+          condensed
+          hover
 
-      
-      data={this.state.users}
-      search>
-      <TableHeaderColumn dataField='userID' isKey>ID</TableHeaderColumn>
-      <TableHeaderColumn dataField='userName'>UserName</TableHeaderColumn>
-      <TableHeaderColumn dataField='firstName'>FirstName</TableHeaderColumn>
-      <TableHeaderColumn dataField='lastName'>LastName</TableHeaderColumn>
-      <TableHeaderColumn dataField='button' dataFormat={this.createDeleteButton}>Delete</TableHeaderColumn>
-      </BootstrapTable>
-
-      {/* <img src={people}/> */}
-      <UpdateUsers/>
+          data={this.state.users}
+          search>
+          <TableHeaderColumn dataField='userID' isKey>ID</TableHeaderColumn>
+          <TableHeaderColumn dataField='userName'>UserName</TableHeaderColumn>
+          <TableHeaderColumn dataField='firstName'>FirstName</TableHeaderColumn>
+          <TableHeaderColumn dataField='lastName'>LastName</TableHeaderColumn>
+          <TableHeaderColumn dataField='button' dataFormat={this.createDeleteButton}>Delete</TableHeaderColumn>
+        </BootstrapTable>
+        <UpdateUsers />
       </div>
     );
   }
