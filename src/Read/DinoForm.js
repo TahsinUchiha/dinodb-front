@@ -28,7 +28,9 @@ getDino = e => {
         this.setState({diet});
         const description = res.data.description;
         this.setState({description});
-      });
+      })
+      
+    .catch(error => console.log(error));
   
     } else return;
   };

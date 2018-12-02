@@ -27,6 +27,8 @@ getUser = (e) => {
     this.setState({lname});
     this.setState({uname});
   })
+  
+  .catch(error => console.log(error));
 } else return;
 };
 
