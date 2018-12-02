@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from "axios";
 import info from '.././Images/info.jpg'
-
+import {url} from "../App";
 
 class UserForm extends React.Component {
     constructor(props) {
@@ -17,7 +17,7 @@ getUser = (e) => {
   const userID = e.target.elements.username.value;
 
   if (userID) {
-  axios.get(`http://35.230.143.224:8080/dinodb/api/dinosaur/getUsers/${userID}`)
+  axios.get(url+`:8080/dinodb/api/dinosaur/getUsers/${userID}`)
   .then((res) => {
     const fname = res.data.firstName;
     const lname = res.data.lastName;

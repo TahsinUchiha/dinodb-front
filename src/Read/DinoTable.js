@@ -3,10 +3,10 @@ import axios from 'axios';
 import allDinos from '.././Images/allDinos.jpg'
 import { BootstrapTable, 
   TableHeaderColumn, 
-  Button,
-  
-  BSTable } from 'react-bootstrap-table';
+ } from 'react-bootstrap-table';
 import UpdateDinos from '../Update/UpdateDinos';
+import {url} from "../App";
+
 
 class Tables extends Component {
   constructor(props){
@@ -19,14 +19,14 @@ class Tables extends Component {
     this.getAllDinosaurs();
   }
   getAllDinosaurs = () => {
-    axios.get('http://35.230.143.224:8080/dinodb/api/dinosaur/getAllDinosaurs').then(res => {
+    axios.get(url +':8080/dinodb/api/dinosaur/getAllDinosaurs').then(res => {
       this.setState({
         dinos: res.data
       });
     });
   }
   deleteDino = (event) => {
-    axios.delete('http://35.230.143.224:8080/dinodb/api/dinosaur/deleteDinosaur/' + event).then((response) => {
+    axios.delete(url +':8080/dinodb/api/dinosaur/deleteDinosaur/' + event).then((response) => {
   window.location.reload()
     });
   }
@@ -36,7 +36,7 @@ class Tables extends Component {
 
   componentWillMount() {
     axios.all([
-      axios.get('http://35.230.143.224:8080/dinodb/api/dinosaur/getAllDinosaurs'),
+      axios.get(url +':8080/dinodb/api/dinosaur/getAllDinosaurs'),
     ])
     .then(axios.spread(function ( type, dinosaurid ) {
       let dinosaur = type.data.concat(dinosaurid.data);

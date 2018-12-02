@@ -10,6 +10,8 @@ import {
   ControlLabel,
   Button
 } from "react-bootstrap";
+import {url} from "../App";
+
 
 class DeleteDinos extends Component {
     constructor(props) {
@@ -24,7 +26,7 @@ class DeleteDinos extends Component {
   
       if (dinoID) {
         axios
-          .delete(`http://35.230.143.224:8080/dinodb/api/dinosaur/deleteDinosaur/${dinoID}`)
+          .delete(url+`:8080/dinodb/api/dinosaur/deleteDinosaur/${dinoID}`)
           .then(res => {
             console.log(res);
             alert("Dinosaur Successfully Removed!")
@@ -34,15 +36,6 @@ class DeleteDinos extends Component {
   
     render() {
       return (
-        // <form onSubmit={this.removeDino}>
-        //     <header>
-        //     <h1>Delete Dino by ID</h1>
-        //     </header>
-  
-        //   <p>Delete a Dinosaur of your choice by ID [Hint: check which user is which ID]</p>
-        //   <input type="text" name="dinoID" />
-        //   <button>Remove Dinosaur</button>
-        // </form>
 
         <div>
         <header>

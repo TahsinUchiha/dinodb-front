@@ -10,6 +10,7 @@ import {
   ControlLabel,
   Button
 } from "react-bootstrap";
+import {url} from "../App";
 
 class CreateDinos extends Component {
     addDinos = e => {
@@ -29,7 +30,7 @@ class CreateDinos extends Component {
         description 
       ) {
         axios
-          .post(` http://35.230.143.224:8080/dinodb/api/dinosaur/addDinosaur`, {
+          .post(url +`:8080/dinodb/api/dinosaur/addDinosaur`, {
             type,
             dinosaurName,
             diet,

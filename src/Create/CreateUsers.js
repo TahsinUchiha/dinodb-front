@@ -10,7 +10,7 @@ import {
   ControlLabel,
   Button
 } from "react-bootstrap";
-
+import {url} from "../App";
 
 class CreateUsers extends Component {
     addUser = e => {
@@ -28,7 +28,7 @@ class CreateUsers extends Component {
         lastName 
       ) {
         axios
-          .post(` http://35.230.143.224:8080/dinodb/api/dinosaur/addUser`, {
+          .post(url+`:8080/dinodb/api/dinosaur/addUser`, {
             userName,
             firstName,
             lastName
@@ -41,18 +41,7 @@ class CreateUsers extends Component {
         alert("Some fields need filling");
       }
     };
-    // verification () {
-    //     return (
-    //     <div>
-    //     <p>
-    //     User has been Added!
-    //     </p>
-    //     </div>
-    //     );
-    // }
        
-
-  
     render() {
       return (
           <div>

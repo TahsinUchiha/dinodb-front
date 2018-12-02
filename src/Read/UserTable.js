@@ -3,6 +3,7 @@ import axios from 'axios';
 import people from '.././Images/people.jpg'
 import { BootstrapTable, TableHeaderColumn, BSTable, button } from 'react-bootstrap-table';
 import UpdateUsers from '../Update/UpdateUsers';
+import {url} from "../App";
 
 class UserTables extends Component {
   constructor(props){
@@ -15,14 +16,14 @@ class UserTables extends Component {
     this.getAllUsers();
   }
   getAllUsers = () => {
-    axios.get(`http://35.230.143.224:8080/dinodb/api/dinosaur/getAllUsers`).then(res => {
+    axios.get(url +`:8080/dinodb/api/dinosaur/getAllUsers`).then(res => {
       this.setState({
         users: res.data
       });
     });
   }
   deleteUser = (event) => {
-    axios.delete(`http://35.230.143.224:8080/dinodb/api/dinosaur/deleteUsers/` + event).then((res) => {
+    axios.delete(url +`:8080/dinodb/api/dinosaur/deleteUsers/` + event).then((res) => {
   window.location.reload()
     });
   }
@@ -32,7 +33,7 @@ class UserTables extends Component {
 
   componentWillMount() {
     axios.all([
-      axios.get(`http://35.230.143.224:8080/dinodb/api/dinosaur/getAllUsers`),
+      axios.get(url +`:8080/dinodb/api/dinosaur/getAllUsers`),
     ])
     .then(axios.spread(function ( userID, userName ) {
       let user = userID.data.concat(userName.data);

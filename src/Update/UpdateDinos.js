@@ -10,7 +10,7 @@ import {
   ControlLabel,
   Button
 } from "react-bootstrap";
-
+import {url} from "../App";
 
 class UpdateDinos extends Component {
  
@@ -32,7 +32,7 @@ updateDinos = e => {
     ) {
       axios
         .put(
-          `http://35.230.143.224:8080/dinodb/api/dinosaur/updateDinosaur/${dinosaurid}`,
+          url+`:8080/dinodb/api/dinosaur/updateDinosaur/${dinosaurid}`,
           {
             dinosaurid,
             type,  
